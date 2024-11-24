@@ -1,9 +1,27 @@
-In the context of the coursework, we worked with a set of real data related to the positions of ships in Piraeus and the Saronic Gulf, as transmitted by the ships and collected by appropriate antennas through the Automatic Identification System (AIS). Specifically, the dataset we used consists of three (3) CSV files, one for each table of the DB. In particular, the first file (Positions.csv) contains ship positions for the period 01/08/2019 - 30/08/2019, the second (Vessels.csv) contains static information about the ships (type and flag) and, finally, the third (VesselTypes.csv) contains a short description of the different types of ships. 
+# DBMS Project: Ship Positions Analysis
 
-• Positions (id, t, lon, lat, heading, course, speed, vessel_id) // the spots of the ships
+## Overview
 
-• Vessels (id, flag, type) // information about the ships
+The project involves working with real-world Automatic Identification System (AIS) data, analyzing the positions of ships in the Piraeus and Saronic Gulf areas during August 2019. The project uses PostgreSQL to manage the data and optimize query performance.
 
-• VesselTypes (code, description) // the types of ships
+## Project Goals
 
-You can download the dataset from here: https://datastories.cs.unipi.gr/index.php/s/ZEM86Fe6i4FeJCj.
+The primary objectives of this project are:
+1. Importing real-world AIS data into PostgreSQL.
+2. Executing SQL queries to analyze ship movements and vessel information.
+3. Optimizing the performance of database queries through memory management, parallel processing, indexing, and partitioning.
+
+## Dataset
+
+The dataset consists of three CSV files:
+1. **Positions.csv**: Contains ship position records, including longitude, latitude, speed, and timestamp.
+2. **Vessels.csv**: Provides static information about ships, such as the flag and type of each vessel.
+3. **VesselTypes.csv**: Describes various types of vessels, mapping type codes to human-readable descriptions.
+
+The dataset is available for download from the [University of Piraeus AIS Data Visualization](https://datastories.cs.unipi.gr/index.php/s/ZEM86Fe6i4FeJCj).
+
+### Database Schema
+
+- **Positions** (`id`, `t`, `lon`, `lat`, `heading`, `course`, `speed`, `vessel_id`)
+- **Vessels** (`id`, `flag`, `type`)
+- **VesselTypes** (`code`, `description`)
